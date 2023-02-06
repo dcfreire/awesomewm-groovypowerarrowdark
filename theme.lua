@@ -1,6 +1,14 @@
 --[[
-     Groovy Powerarrow Dark Awesome WM theme
-     https://github.com/funnisquares
+
+
+
+    Groovy Powerarrow Dark Awesome WM theme
+    https://github.com/funnisquares
+
+    Based on:
+    Powerarrow Dark Awesome WM theme
+        github.com/lcpz
+
 --]]
 
 local gears             = require("gears")
@@ -86,13 +94,11 @@ function theme.at_screen_connect(s)
         clock_widget,
         layout_widget
     }
-
     local right_widgets = {
         layout = wibox.layout.fixed.horizontal,
         wibox.widget.systray(),
         theme.spr,
     }
-
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(22), bg = theme.bg_normal, fg = theme.fg_normal })
 
@@ -120,7 +126,7 @@ function theme.at_screen_connect(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            --theme.spr,
+            --spr,
             s.mytaglist,
             s.mypromptbox,
             theme.spr,

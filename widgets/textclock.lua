@@ -2,7 +2,6 @@ local awful = require("awful")
 local markup  = require("lain.util.markup")
 local theme = require("themes.powerarrow-dark.settings")
 local lain  = require("lain")
-local wibox = require("wibox")
 
 local clock = awful.widget.watch(
     "date +'%a %d %b %R'", 60,
